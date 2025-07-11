@@ -1,5 +1,5 @@
 # -------------------- Django Core Stack -------------------- #
-Django>=4.2
+Django>=4.2.22
 djangorestframework>=3.14  # REST API Framework
 psycopg2-binary>=2.9  # PostgreSQL Adapter
 django-cors-headers>=4.3  # CORS Handling
@@ -19,8 +19,8 @@ PyMuPDF>=1.23.7  # PDF Text Extraction (if needed)
 pdfminer.six>=20221105  # Alternative PDF Parsing
 
 # -------------------- LLM & Embedding-based Search -------------------- #
-transformers>=4.38  # Hugging Face Model Support (Optional for RAG)
-torch>=2.2  # Required for Deep Learning
+transformers>=4.52.0  # Hugging Face Model Support (Optional for RAG)
+torch>=2.7.1  # Required for Deep Learning
 sentence-transformers>=2.2  # For Embedding-based SDG Mapping
 langchain-openai>=0.0.5  # Future integration with OpenAI models (optional)
 pgvector>=0.2.5  # Store Embeddings in PostgreSQL
@@ -31,8 +31,10 @@ redis>=5.0  # Redis Caching Layer
 
 # -------------------- Environment & Security -------------------- #
 python-dotenv>=1.0.1  # Load .env Files
-requests>=2.31  # API Requests Handling
+requests>=2.32.4  # API Requests Handling
 httpx>=0.25  # For Async HTTP Handling
 
 # -------------------- Frontend Dependencies (Next.js) -------------------- #
 # Add in `package.json` (if needed)
+protobuf>=4.25.8 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
