@@ -36,3 +36,4 @@ httpx>=0.25  # For Async HTTP Handling
 
 # -------------------- Frontend Dependencies (Next.js) -------------------- #
 # Add in `package.json` (if needed)
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
