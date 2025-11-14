@@ -16,7 +16,7 @@ pandas>=2.1
 openpyxl>=3.1  # Excel File Handling
 pdfplumber>=0.10  # PDF Parsing
 PyMuPDF>=1.23.7  # PDF Text Extraction (if needed)
-pdfminer.six>=20221105  # Alternative PDF Parsing
+pdfminer.six>=20251107  # Alternative PDF Parsing
 
 # -------------------- LLM & Embedding-based Search -------------------- #
 transformers>=4.38  # Hugging Face Model Support (Optional for RAG)
