@@ -1,5 +1,5 @@
 # -------------------- Django Core Stack -------------------- #
-Django>=4.2
+Django>=4.2.28
 djangorestframework>=3.14  # REST API Framework
 psycopg2-binary>=2.9  # PostgreSQL Adapter
 django-cors-headers>=4.3  # CORS Handling
@@ -36,3 +36,5 @@ httpx>=0.25  # For Async HTTP Handling
 
 # -------------------- Frontend Dependencies (Next.js) -------------------- #
 # Add in `package.json` (if needed)
+protobuf>=5.29.6 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
